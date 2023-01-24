@@ -14,7 +14,7 @@ echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀�
 echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡆⠀⠀⢠⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" ' >> bash.bashrc  
 echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⣿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" ' >> bash.bashrc  
 echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠷⣦⣤⡾⠋ " ' >> bash.bashrc  
-figlet -f digital "H A C K E R B U L L S " >> bash.bashrc  
+echo ' figlet -f digital "H A C K E R B U L L S " ' >> bash.bashrc  
 echo ' echo "=========================================" ' >> bash.bashrc  
 echo ' date && uname ' >> bash.bashrc  
 echo ' echo "=========================================" ' >> bash.bashrc  
