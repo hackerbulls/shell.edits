@@ -1,20 +1,21 @@
+#!/bin/bash
 cd .. && cd .. && cd usr && cd etc
 rm -rf motd motd-playstore motd-playstore.dpkg-old
 pkg install figlet
-echo ' echo "⠀⠀⣴⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣦⡀⠀" ' >> bash.bashrc  
-echo ' echo "⠀⢸⣿⣧⣀⣀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⢀⣀⣼⣿⡧⠀" ' >> bash.bashrc  
-echo ' echo "⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⠿⠁⠀" ' >> bash.bashrc   
-echo ' echo "⠀⠀⠀⠀⠙⠛⠿⠿⠿⠿⣿⠀⠀⠀⠀⠀⠀⠀⠀⣿⡿⠿⠿⠿⠛⠋⠁⠀⠀⠀" ' >> bash.bashrc  
-echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" ' >> bash.bashrc  
-echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣤⡄⠀⠀⠀⠀⠀⠀⢀⣤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀" ' >> bash.bashrc  
-echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠿⠀⠀⠀⠀⠀⠀⠿⠿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀" ' >> bash.bashrc  
-echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" ' >> bash.bashrc  
-echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" ' >> bash.bashrc  
-echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" ' >> bash.bashrc  
-echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡆⠀⠀⢠⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" ' >> bash.bashrc  
-echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⣿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" ' >> bash.bashrc  
-echo ' echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠷⣦⣤⡾⠋ " ' >> bash.bashrc  
-echo ' figlet -f digital "H A C K E R B U L L S " ' >> bash.bashrc  
-echo ' echo "=========================================" ' >> bash.bashrc  
-echo ' date && uname ' >> bash.bashrc  
-echo ' echo "=========================================" ' >> bash.bashrc  
+pkg install ruby
+gem install lolcat
+cd /data/data/com.termux/files/usr/etc
+echo ' echo -e   "\e[31m⠀⠀⣴⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣦⡀\e[0m  ⠀" | lolcat ' >> bash.bashrc
+echo ' echo -e   "\e[31m⠀⢸⣿⣧⣀⣀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⢀⣀⣼⣿⡧\e[0m   " ' >> bash.bashrc
+echo ' echo -e   "\e[31m⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⠿⠁\e[0m "  ' >> bash.bashrc
+echo ' echo -e   "\e[31m⠀⠀⠀⠀⠙⠛⠿⠿⠿⠿⣿⠀⠀⠀⠀⠀⠀⠀⠀⣿⡿⠿⠿⠿⠛⠋⠁\e[0m  "   ' >> bash.bashrc
+echo ' echo -e   "                                   " '>> bash.bashrc
+echo ' echo -e   "\e[31m⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣤⡄⠀⠀⠀⠀⠀⠀⢀⣤⡄\e[0m ⠀" | lolcat' >> bash.bashrc 
+echo ' echo -e   "\e[31m⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠿⠀⠀⠀⠀⠀⠀⠿⠿⠃\e[0m⠀" |lolcat' >> bash.bashrc
+echo ' echo -e   "                                 ⠀⠀    ⠀"' >> bash.bashrc
+echo ' echo -e   "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀          ⠀"' >> bash.bashrc
+echo ' echo -e   "\e[31m⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡆⠀⠀⢠⣦\e[0m⠀⠀    ⠀"' >> bash.bashrc
+echo ' echo -e   "\e[31m⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⣿⠆\e[0m  ⠀⠀"'  >> bash.bashrc
+echo ' echo -e   "\e[31m⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠷⣦⣤⡾⠋\e[0m " | lolcat' >> bash.bashrc
+echo ' figlet HackerBull | lolcat ' >> bash.bashrc
+echo 'tput bold; date && uname; tput sgr0' >> bash.bashrc 
